@@ -1,0 +1,13 @@
+{
+	"name": "iframe-viewer",
+	"description": "A custom element for viewing html documents.",
+	"homepage": "https://github.com/minifyre/iframe-viewer",
+	"license": "MIT",
+	"version": "0.5.0",
+	"dependencies": {
+		"pane-viewer":"minifyre/pane-viewer"
+	},
+	"devDependencies": {
+		"cherub": "minifyre/cherub"
+	}
+}

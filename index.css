@@ -1,0 +1,37 @@
+:host
+{
+	contain:content;
+	display:flex;
+	flex-direction:column;
+}
+*
+{
+	box-sizing:border-box;
+}
+iframe
+{
+	border:0;
+	background:#fff;
+	flex:1 1 auto;
+	width:100%;
+}
+header
+{
+	background:#ccc;
+	display:flex;
+	flex:0 0 auto;
+	flex-direction:row;
+	min-height:1.2rem;
+	padding:0.125rem 0.25rem;
+	width:100%;
+}
+	header input,
+	header button
+	{
+		border:0;
+		margin:0.2rem;
+	}
+.address-bar
+{
+	flex:1 1 auto;
+}
