@@ -21,7 +21,7 @@ config.state=
 {
 	file:
 	{
-		value:'<h1>Hello!</h1>'
+		value:'<!Doctype html>\n<h1>Hello!</h1>'
 	}
 }
 function output(viewer)
@@ -49,3 +49,4 @@ output.render=function(state,{contentWindow})
 	doc.write(state.file.value)
 	doc.close()
 }
+Object.assign(iframe,silo)
