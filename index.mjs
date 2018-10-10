@@ -4,7 +4,6 @@ const
 {truth,v}=util
 export default async function iframe(url='/node_modules/iframe-viewer/')
 {
-
 	await silo(url,'iframe-viewer',iframe.viewer)
 }
 iframe.viewer=class extends silo.viewer
@@ -50,4 +49,4 @@ output.render=function(state,{contentWindow})
 	doc.write(state.file.value)
 	doc.close()
 }
-Object.assign(iframe,silo)
+Object.assign(iframe,silo,{viewer:iframe.viewer})
