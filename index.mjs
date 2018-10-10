@@ -22,7 +22,8 @@ config.state=
 	file:
 	{
 		value:'<!Doctype html>\n<h1>Hello!</h1>'
-	}
+	},
+	type:'iframe-viewer'
 }
 function output(viewer)
 {
