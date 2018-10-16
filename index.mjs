@@ -10,10 +10,7 @@ iframe.viewer=class extends silo.viewer
 {
 	constructor(state)
 	{
-		super()
-		let renderer=x=>x
-		this.state=truth(logic(state),(...args)=>renderer(args)).state
-		this.render=renderer=v.render(this.shadowRoot,this,output)
+		super(state,silo)
 	}
 }
 config.state=
