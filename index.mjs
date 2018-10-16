@@ -17,15 +17,15 @@ config.state=
 {
 	file:
 	{
-		value:'<!Doctype html>\n<h1>Hello!</h1>'
+		value:''
 	},
 	type:'iframe-viewer'
 }
-function output(viewer)
+silo.output=function(viewer)
 {
 	const
 	{state}=viewer,
-	on={render:({target})=>output.render(state,target)}
+	on={render:({target})=>silo.output.render(state,target)}
 
 	return [v('style',{},config.css),
 		v('header',{},
@@ -37,7 +37,7 @@ function output(viewer)
 		v('iframe',{data:{modified:state.file.modified},on})
 	]
 }
-output.render=function(state,{contentWindow})
+silo.output.render=function(state,{contentWindow})
 {
 	if(!contentWindow) return//not attatched to dom
 	const {document:doc}=contentWindow
