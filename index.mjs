@@ -19,7 +19,10 @@ config.state=
 	{
 		value:''
 	},
-	type:'iframe-viewer'
+	view:
+	{
+		type:'iframe-viewer'
+	}
 }
 silo.output=function(viewer)
 {
