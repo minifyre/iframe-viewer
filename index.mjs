@@ -4,7 +4,7 @@ const
 {truth,v}=util
 export default async function iframe(url='/node_modules/iframe-viewer/')
 {
-	await silo(url,'iframe-viewer',iframe.viewer)
+	await util.mkCustomEl(url,'iframe-viewer',iframe.viewer)
 }
 iframe.viewer=class extends silo.viewer
 {
