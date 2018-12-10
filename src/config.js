@@ -1,0 +1,11 @@
+config.state=
+{
+	file:
+	{
+		value:''
+	},
+	view:
+	{
+		type:'iframe-viewer'
+	}
+}
