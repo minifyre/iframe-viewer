@@ -8,7 +8,7 @@ export default silo(async function iframe(url='/node_modules/iframe-viewer/')
 {
 	await util.mkCustomEl(url,'iframe-viewer',iframe.viewer)
 })
-iframe.viewer=class extends silo.viewer
+iframe.viewer=class extends silo.customElement
 {
 	constructor(state)
 	{
